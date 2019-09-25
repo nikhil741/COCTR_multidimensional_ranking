@@ -3,9 +3,9 @@ This contains the codebase and the annotated relevant trial set for each of the 
 
 Paper link is coming up!
 
-## Concepts(UMLS) based Clinincal Trial Retrieval Model
+## UMLS concept based retrieval and aspect based ranking model of clinical trials
 
-### Rquirements
+### Requirements
 1. Dump Of the Clinical Trials from the follwing link.
 [https://clinicaltrials.gov/AllPublicXML.zip]
 
@@ -17,14 +17,42 @@ Paper link is coming up!
 
 4. Download Elastic Search for the baseline.
 
-4. Enviorment all packages in requirements.txt
+4. All environment packages in [requirements.txt] file.
 
 
 ### Folder Strucutre
 
-#### AllAnnotatedData
+#### allAnnotatedData
 1. It contains the 25 annotated queries.
 2. 5 queries for each disease class.
+
+#### baselineSetup
+Contatins the following;-
+1. Baseline queries.
+2. Indexing and retreiving source files.
+
+#### bigTableAndSmallTable
+Calculate Precision, Speraman's Rank oreder correlation and overlap across 25 final queries retrieved trials ranked on the basis of relevancy(5-methods) 
+
+#### commonPatientSearchedTerms
+1. QuickUMLS tool applied over 1440 lexicons of medDRA common patient terms
+2. Finds the problematic queries.
+
+#### datasetPreparation
+1. Get PubMedIds for the clinical trials.
+2. Map clinical trials linked with PubMed-Ids to different classes(26) of disease with all extra fields(Adversity, popularity) appended.
+
+#### goldStandardDataTREC_2018
+Robustness study
+Find:-
+1. Precision@10
+2. Recall
+
+#### rankedTrialsOnDifferentRelevancyBasedSchemes
+Contains trials in ranked order on the basis of different relevancy (pageRank, Exact Match, SynSet) based approach.
+
+#### rankingOnTheBasisOfRelevancyAndAddingColumnsForInclusionExclusionCounts
+Rank retrieved trials for 25 quries on the basis of different relevancy(25) methods.
 
 #### All_Importan_Data_And_Dump_Data
 1. 5 class Csv Files with all fields appended.
@@ -32,29 +60,5 @@ Paper link is coming up!
 3. Ranked trials on the basis of 5 relevancy based methodologies.
 4. Dump files.
 
-#### BaselineSetup
-Contatins the following;-
-1. Baseline queries.
-2. Indexing and retreiving source files.
-
-#### BigTableAndSmallTable
-Calculate Precision, Speraman's Rank oreder correlation and overlap across 25 final queries retrieved trials ranked on the basis of relevancy(5-methods) 
-
 #### clusteringSourceFiles
 Contains application of different clustering algorithm like DBScan, Affinity Algorithms on different variations of the data.
-
-#### common_patient_searched_terms
-QuickUMLS applied over 1440 lexicons of medDRA common patient terms
-Finds the problematic queries.
-
-#### datasetPreparation
-From Clinical TRials XMl file to Different classes(26) of disease with all extra fields(Adversity, popularity) appended.
-
-#### RankingOnTheBasisOFRelevancyAlsoAddingColumnsForInclusionExclusionCounts
-Rank retrieved trials for 25 quries on the basis of different relevancy(25) methods.
-
-#### TREC2018_goldStandardData
-Robustness study
-Find:-
-1. Precision@10
-2. Recall
