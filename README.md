@@ -1,3 +1,8 @@
+## Paper Description
+This contains the codebase and the annotated relevant trial set for each of the 25 queries, for the paper titled "Towards an Aspect-based Ranking Model for Clinical Trial Search" accepted in the [8th International Conference on Computational Data and Social Networks (CSoNet 2019)](http://optnetsci.cise.ufl.edu/CSoNet/). 
+
+Paper link is coming up!
+
 ## Concepts(UMLS) based Clinincal Trial Retrieval Model
 
 ### Rquirements
