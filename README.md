@@ -17,22 +17,23 @@ Paper link is coming up!
 
 4. Download Elastic Search for the baseline.
 
-4. All environment packages in [requirements.txt] file.
+5. Baseline code [https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track].
+
+6. All environment packages in [requirements.txt] file.
 
 
-### Folder Strucutre
+### Folder strucutre and descriptions 
 
 #### allAnnotatedData
 1. It contains the 25 annotated queries.
 2. 5 queries for each disease class.
 
-#### baselineSetup
-Contatins the following;-
-1. Baseline queries.
-2. Indexing and retreiving source files.
+#### baselineSetup [https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track]
+1. Scripts for indexing trials for each class of disease and script for retriving and ranking trials on the basis of query.
+
 
 #### bigTableAndSmallTable
-Calculate Precision, Speraman's Rank oreder correlation and overlap across 25 final queries retrieved trials ranked on the basis of relevancy(5-methods) 
+1. Calculates the precision, speraman's rank order correlation and overlap across 25 final queries retrieved trials and ranked on the basis of relevancy(5-methods) 
 
 #### commonPatientSearchedTerms
 1. QuickUMLS tool applied over 1440 lexicons of medDRA common patient terms
@@ -44,15 +45,14 @@ Calculate Precision, Speraman's Rank oreder correlation and overlap across 25 fi
 
 #### goldStandardDataTREC_2018
 Robustness study
-Find:-
 1. Precision@10
 2. Recall
 
 #### rankedTrialsOnDifferentRelevancyBasedSchemes
-Contains trials in ranked order on the basis of different relevancy (pageRank, Exact Match, SynSet) based approach.
+1. Contains trials in ranked order on the basis of different relevancy (pageRank, Exact Match, SynSet) based approach.
 
 #### rankingOnTheBasisOfRelevancyAndAddingColumnsForInclusionExclusionCounts
-Rank retrieved trials for 25 quries on the basis of different relevancy(25) methods.
+1. Rank retrieved trials for 25 quries on the basis of different relevancy(25) methods.
 
 #### All_Importan_Data_And_Dump_Data
 1. 5 class Csv Files with all fields appended.
@@ -61,4 +61,4 @@ Rank retrieved trials for 25 quries on the basis of different relevancy(25) meth
 4. Dump files.
 
 #### clusteringSourceFiles
-Contains application of different clustering algorithm like DBScan, Affinity Algorithms on different variations of the data.
+1. Contains application of different clustering algorithm like DBScan, Affinity Algorithms on different variations of the data.
