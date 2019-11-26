@@ -62,3 +62,24 @@ Robustness study
 
 #### clusteringSourceFiles
 1. Contains application of different clustering algorithm like DBScan, Affinity Algorithms on different variations of the data.
+
+### Citation information
+If you use the codes or the dataset, please cite the paper.
+#### Bibtex
+    @InProceedings{10.1007/978-3-030-34980-6_25,
+    author="Roy, Soumyadeep
+    and Rudra, Koustav
+    and Agrawal, Nikhil
+    and Sural, Shamik
+    and Ganguly, Niloy",
+    editor="Tagarelli, Andrea
+    and Tong, Hanghang",
+    title="Towards an Aspect-Based Ranking Model for Clinical Trial Search",
+    booktitle="Computational Data and Social Networks",
+    year="2019",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="209--222",
+    doi="10.1007/978-3-030-34980-6_25",
+    isbn="978-3-030-34980-6"
+    }
