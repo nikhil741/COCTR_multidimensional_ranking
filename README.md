@@ -6,12 +6,13 @@ This contains the codebase and the annotated relevant trial set for each of the 
 ## UMLS concept based retrieval and aspect based ranking model of clinical trials
 
 ### Requirements
-1. Download dump Of the Clinical Trials from the [link](https://clinicaltrials.gov/AllPublicXML.zip)
+1. Download the dump of the clinical trials from the [link](https://clinicaltrials.gov/AllPublicXML.zip)
 2. Setup [QuickUMLS](https://github.com/Georgetown-IR-Lab/QuickUMLS) tool 
-3. Download Adversity Events reported from the [site](https://aact.ctti-clinicaltrials.org/pipe_files)
-4. Download and setup Elastic search for the baseline.
-5. For the baseline code [refer](https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track)
-6. All environment packages in [requirements.txt] file.
+3. Download the adversity events reported from the [site](https://aact.ctti-clinicaltrials.org/pipe_files)
+4. Base Line Setup
+    1. Download and setup Elastic search for the baseline.
+    2. For the baseline code [refer](https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track)
+5. All environment packages are listd in [requirements.txt] file.
 
 
 ### Folder strucutre & description
