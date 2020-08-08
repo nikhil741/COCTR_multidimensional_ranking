@@ -1,36 +1,27 @@
 ## Paper Description
 This contains the codebase and the annotated relevant trial set for each of the 25 queries, for the paper titled **Towards an Aspect-based Ranking Model for Clinical Trial Search** accepted in the [8th International Conference on Computational Data and Social Networks (CSoNet 2019)](http://optnetsci.cise.ufl.edu/CSoNet/). 
 
-Paper link: [https://link.springer.com/chapter/10.1007/978-3-030-34980-6_25]
+[Paper link:](https://link.springer.com/chapter/10.1007/978-3-030-34980-6_25)
 
 ## UMLS concept based retrieval and aspect based ranking model of clinical trials
 
 ### Requirements
-1. Dump Of the Clinical Trials from the follwing link.
-[https://clinicaltrials.gov/AllPublicXML.zip]
-
-2. Setup of QuickUMLS tool.
-[https://github.com/Georgetown-IR-Lab/QuickUMLS]
-
-3. Download Adversity Events Reported from the site.
-[https://aact.ctti-clinicaltrials.org/pipe_files]
-
-4. Download Elastic Search for the baseline.
-
-5. Baseline code [https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track].
-
+1. Download dump Of the Clinical Trials from the [link](https://clinicaltrials.gov/AllPublicXML.zip)
+2. Setup [QuickUMLS](https://github.com/Georgetown-IR-Lab/QuickUMLS) tool 
+3. Download Adversity Events reported from the [site](https://aact.ctti-clinicaltrials.org/pipe_files)
+4. Download and setup Elastic search for the baseline.
+5. For the baseline code [refer](https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track)
 6. All environment packages in [requirements.txt] file.
 
 
-### Folder strucutre and descriptions 
+### Folder strucutre & description
 
 #### allAnnotatedData
 1. It contains the 25 annotated queries.
 2. 5 queries for each disease class.
 
-#### baselineSetup [https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track]
+#### baselineSetup [refer](https://github.com/ajinkyathorve/TREC-2017-PM-CDS-Track)
 1. Scripts for indexing trials for each class of disease and script for retriving and ranking trials on the basis of query.
-
 
 #### bigTableAndSmallTable
 1. Calculates the precision, speraman's rank order correlation and overlap across 25 final queries retrieved trials and ranked on the basis of relevancy(5-methods) 
